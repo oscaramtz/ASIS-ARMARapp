@@ -4,35 +4,33 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
-    @Styles.Render("~/Content/css")
+    <title>@ViewBag.Title Modelo ASIS ARMAR7</title>
+    @Styles.Render("~/Content/bootstrap-cerulean.css")
     @Scripts.Render("~/bundles/modernizr")
+
 </head>
+
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+
+@Html.Partial("_navbar")
+    <div class="container body-content">
+        <div style="margin-top: 70px;">@RenderBody()</div> 
+ 
+        <footer>
+            <div class="dropup">
+                <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Plantillas de análisis
+                    <span class="caret"></span>
                 </button>
-                @Html.ActionLink("Nombre de aplicación", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li>@Html.ActionLink("Demográfico", "BI", "Home")</li>
+                    <li>@Html.ActionLink("Tablas", "tableau", "Home")</li>
+                    <li>@Html.ActionLink("Dashboard", "tableauDBoard", "Home")</li>
                 </ul>
             </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+            <p>&copy; @DateTime.Now.Year - Organización Panamericana de la Salud - ASIS-ARMAR7</p>
+            <ul class="breadcrumbs x-hidden-focus" role="navigation" aria-label="Breadcrumb" data-bi-name="breadcrumb" ms.cmpgrp="breadcrumb" itemtype="http://schema.org/BreadcrumbList" itemscope=""></ul>
+            <div itemtype="http://schema.org/ListItem" itemscope="" itemprop="itemListElement"><a href="/.." itemprop="item">Página anterior...</a></div>
         </footer>
     </div>
 
