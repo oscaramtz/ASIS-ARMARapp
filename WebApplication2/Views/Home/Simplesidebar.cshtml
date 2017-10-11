@@ -1,8 +1,4 @@
-﻿@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html lang="eng">
 
 <head>
 
@@ -14,10 +10,12 @@
     <title>Simple Sidebar - Start Bootstrap Template</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="~/Content/bootstrap-cerulean.css" rel="stylesheet" />
 
     <!-- Custom styles for this template -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <link href="~/Content/simple-sidebar.css" rel="stylesheet" />
 
 </head>
 
@@ -61,9 +59,9 @@
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <h1>Simple Sidebar</h1>
-                <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
+                <p>Esta plantilla tiene un sistema de conmutación de menú sensible. El menú aparecerá contraído en pantallas más pequeñas y aparecerá sin colapsar en pantallas más grandes. Cuando se cambia usando el botón de abajo, el menú aparecerá / desaparecerá. En las pantallas pequeñas, el contenido de la página se eliminará del lienzo.</p>
+                <p>Asegúrate que la página tenga el<code>#page-content-wrapper</code>.</p>
+                <button class="btn btn-info dropdown-toggle" type="button" ><a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Sidebar</a></button>
             </div>
         </div>
         <!-- /#page-content-wrapper -->
@@ -71,9 +69,10 @@
     </div>
     <!-- /#wrapper -->
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-3.2.1.min.js"></script>
+    <script src="~/Scripts/popper.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
 
     <!-- Menu Toggle Script -->
     <script>

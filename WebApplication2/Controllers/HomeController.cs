@@ -41,6 +41,10 @@ namespace ModeloARMARAccountManager.Controllers
 
             return View();
         }
+        public ActionResult Simplesidebar()
+        {
 
+            return View();
+        }
     }
 }
